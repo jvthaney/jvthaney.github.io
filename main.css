@@ -3503,7 +3503,7 @@ img {vertical-align: middle;}
 .column p {
 	padding: 0 0 0 1em;
 }
- 
+
 /* Clear floats after the columns */
   .row:after {
 	content: "";
@@ -3513,7 +3513,8 @@ img {vertical-align: middle;}
 
 .outreachpic {
 	max-width: 500px;
-	padding-left: 5em;
+	padding-left: 2em;
+	padding-right: 2em;
 
 }
 
