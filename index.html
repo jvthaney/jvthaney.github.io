@@ -6,10 +6,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Ubuntu|Advent Pro|Oswald|Noto Sans|Assistant|Cabin|Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Ubuntu|Advent Pro|Oswald|Noto Sans|Assistant|Cabin|Lato|Source Sans Pro">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">	
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
+		<!-- Scripts -->
+		<script src="https://kit.fontawesome.com/0ec4a36279.js" crossorigin="anonymous"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-73KSC0YPK5"></script>
 		<script>
@@ -19,87 +26,154 @@
   		gtag('config', 'G-73KSC0YPK5');
 		</script>
 	</head>
-	<body class="is-preload">
+
+<body class="jumbotron">
+<header>
+
+  <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+  <div class="overlay"></div>
+
+  <!-- The HTML5 video element that will create the background video on the header -->
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/Trident-Sep-13-145335-HQ_Trim.mp4" type="video/mp4">
+  </video>
+
+  <!-- The header content -->
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Jessica V. Trout-Haney</h1>
+		<br>
+        <p class="titletext" style="color:white">Aquatic Ecologist</p>
+		<p class="titletext" style="color:white">Postdoctoral researcher at Dartmouth College</p>
+		<a href="https://twitter.com/JVTHaney" target="_blank"><i class="fab fa-twitter tweet" style="font-size:48px;color: white;"></i></a>
+		<a href="mailto:jessica.trout-haney@dartmouth.edu" target="_blank"><i class="fa-solid fa-envelope tweet" style="font-size:48px;color: white;"></i></a>
+		<a href="https://scholar.google.com/citations?user=70rALt4AAAAJ&hl=en" target="_blank"><i class="fab fa-google tweet" style="font-size:48px;color: white;"></i></a>
+
+
+      </div>
+    </div>
+  </div>
+</header>
+<div class="row row-cols-4">
+	<div class="col">
+	  <div class="overlay has-bg-img rounded h-10rem my-2">
+		<div class="card conhover">
+		<img class="opacity-50 imagespecial" src="images/Under_ice.jpg" alt="...">
+		<div class="card-img-overlay">
+		<a href="AboutMeV2.html" style="text-decoration:none"><h3 class="text-dark">About me</h3></a>
+		</div>
+		</div>
+	  </div>
+	</div>
+  
+	<div class="col">
+	  <div class="overlay overlay-primary has-bg-img rounded h-10rem my-2">
+		<div class="card">
+			<img class="card-img-top opacity-50" src="images/kayakskangerborder.jpg" alt="...">
+			<div class="card-img-overlay">
+				<a href="ResearchInterests.html" style="text-decoration:none"><h3 class="text-dark">Research Interests</h3></a>
+			</div>
+			</div>
+		  </div>
+	</div>
+  
+	<div class="col">
+	  <div class="overlay-gradient has-bg-img rounded h-10rem my-2">
+		<div class="card">
+			<img class="card-img-top opacity-50" src="images/Adi.jpg" alt="...">
+			<div class="card-img-overlay">
+				<a href="Teaching.html" style="text-decoration:none"><h3 class="text-dark">Teaching & Outreach</h3></a>
+			</div>
+			</div>
+		  </div>
+	</div>
+
+	<div class="col">
+		<div class="overlay-gradient has-bg-img rounded h-10rem my-2">
+		  <div class="card">
+			  <img class="card-img-top opacity-50" src="images/hjorthnotebook2.JPG" alt="...">
+			  <div class="card-img-overlay overlay-light card-inverse">
+				<a class="aboutmelink" href="PublicationsCV.html" style="text-decoration:none"><h3 class="text-dark">Publications</h3></a>
+			  </div>
+			  </div>
+			</div>
+	  </div>
+  
+  </div>
+<!-- Page section for content below the video header
+<div class="container-fluid ">
+	<div class="row row1 ">
+	<div class="col-sm ">
+		<br><br>
+		<img src="images/Under_ice.jpg" class="img-responsive" width=300px><p class="carousel-caption"><span class="overlay-text">My super text.</span>
+
+	</div>
+	<div class="col-sm ">
+		<br><br>
+	</div>
+	<div class="col-sm">
+		<br><br>
+		<img class="img-circle" src="images/Under_ice.jpg" alt="">
+		<p class="carousel-caption">Some text here </p>
+		<a href="ResearchInterests.html" class="thumbtext"><h3>Research Interests</h3></a>
+	</div>
+
+</div>
+<div class="row row2">
+	<div class="col-sm ">
+	</div>
+	<div class="col-sm ">
+	</div>
+
+</div>
+</div> -->
+
+
 
 <!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/headshot1.JPG" alt="" /></a>
+		<!-- <header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/headshot1.JPG" alt="" /></a>
 				<h1 class="headername">Jessica V. Trout-Haney</h1>
 				<h2 class="headerjob"><small>Aquatic ecologist</small></h2>
 				<h2 class="headertitle"><small>Postdoc at Dartmouth College</small></h2>
+				<h2><a href="https://twitter.com/JVTHaney" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></h2>
+					<li><a href="https://scholar.google.com/citations?user=70rALt4AAAAJ&hl=en" target="_blank" class="icon brands fa-google"><span class="label">Google</span></a></li>
+					<li><a href="mailto:jessica.trout-haney@dartmouth.edu" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+
 			<video id="fish" class="fish-video" autoplay loop muted >
 				<source class="video" src = "images/Trident-Sep-13-145335-HQ_Trim.mp4" type="video/mp4">
-				<!-- <source id="image" src = "images\fish_poster.jpg" type="image/jpg"> -->
-			</video>
-		</div>
+			</video> -->
+		<!-- </header> -->
 
-		</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<!-- <h2></h2> -->
-						<div class="row">
+<!-- <br>
+<div class="container-fluid ">
+    <div class="row ">
+      <div class="col-sm ">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="AboutMeV2.html" class="image fit thumb"><img src="images/insidekayak.JPG" alt="" /></a>
 								<a href="AboutMeV2.html" class="thumbtext"><h3>About me</h3></a>
-								<!-- <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p> -->
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="ResearchInterests.html" class="image fit thumb"><img src="images/Under_ice.jpg" alt="" /></a>
 								<a href="ResearchInterests.html" class="thumbtext"><h3>Research Projects and Interests</h3></a>
-								<!-- <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p> -->
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="Teaching.html" class="image fit thumb"><img src="images/FishShocking1.jpg" alt="" /></a>
 								<a href="Teaching.html" class="thumbtext"><h3>Teaching & Outreach</h3></a>
-								<!-- <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p> -->
 							</article>
 
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="PublicationsCV.html" class="image fit thumb"><img src="images/hjorthnotebook2.jpg" alt="" /></a>
 								<a href="PublicationsCV.html" class="thumbtext"><h3>Publications</h3></a>
-								<!-- <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p> -->
 							</article>
 						</section>
 						</div>
-
-<!-- Footer -->
-		<section id="MainFooter">
-			<p> <small> Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></small></p>
-			</h1>
-		</section>
-	</div>
-
-<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://twitter.com/JVTHaney" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://scholar.google.com/citations?user=70rALt4AAAAJ&hl=en" target="_blank" class="icon brands fa-google"><span class="label">Google</span></a></li>
-						<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-						<li><a href="mailto:jessica.trout-haney@dartmouth.edu" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<!-- <p class="twitter">@JVTHaney</p> -->
-					<!-- <p class="emailaddress">jessica.trout-haney@dartmouth.edu</p> -->
-				</div>
-				<!-- <div class="outerrr">
-					<ul class="copyright">
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					</div>
 				</div> -->
-			</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
