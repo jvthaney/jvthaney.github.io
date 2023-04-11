@@ -2637,11 +2637,12 @@ input, select, textarea {
 		.image img {
 			display: block;
 			border-radius: 4px;
+
 		}
 
 		.image.left, .image.right {
 			width: 40%;
-			max-width: 10rem;
+			max-width: 1rem;
 		}
 
 			.image.left img, .image.right img {
@@ -3611,6 +3612,10 @@ input, select, textarea {
 
 		.banner.style1.content-align-center {
 			text-align: center;
+		}
+
+		.banner.style1.content-align-left {
+			text-align: left;
 		}
 
 		.banner.style1.content-align-right {
@@ -4861,7 +4866,7 @@ input, select, textarea {
 	}
 
 		.spotlight.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 4rem 7rem 5rem 7rem ;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
