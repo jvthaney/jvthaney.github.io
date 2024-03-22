@@ -7283,7 +7283,7 @@ input, select, textarea {
 			margin-bottom: 1rem;
 			margin-top: 0rem;
 			max-width: 100%;
-			position: relative;
+			position: center;
 			width: 64rem;
 			z-index: 1;
 		}
