@@ -8621,6 +8621,13 @@ input, select, textarea {
 				box-shadow: none !important;
 			}
 
+
+			/* Reduce left indentation of section body text */
+.spotlight .content {
+    padding-left: 0;
+}
+
+
 /*👉My Additions👈*/
 .card {
 	font-family: 'Source Sans Pro',sans-serif;
